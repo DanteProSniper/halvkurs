@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header, main, footer {
+    min-height: 25vh;
+    border: 1px dashed green;
+    padding: 5%;
+}
+
+a {
+    font-size: 2rem;
+}
