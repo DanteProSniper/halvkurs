@@ -10,11 +10,20 @@ app.use(express.urlencoded({extended:true}));
 app.get("/", home);
 
 
+app.get("/create", create);
+
+
 function home(req, res){
 
     res.send(render("Welcome to my home page!"));
 
 }
+
+function create(req, res){
+
+    res.send(render(fs.readFileSync("html/formCreate.html").toString()));
+
+}// boo!
 
 
 function render(content){
